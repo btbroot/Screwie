@@ -15,14 +15,11 @@ Note:
 
 import argparse
 import configparser
-from email import message
-import io
 import logging
 import os
-import zoneinfo
-import requests
 import subprocess
 import tempfile
+import zoneinfo
 
 import PIL.Image
 import PIL.ImageDraw

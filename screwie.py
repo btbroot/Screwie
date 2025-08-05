@@ -87,7 +87,10 @@ def handle_message(
             )
             width = 384
             font = PIL.ImageFont.truetype(
-                font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+                font=config[CONFIG_SECTION].get(
+                    option='font_path',
+                    fallback='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+                ),
                 size=24
             )
             padding = 8

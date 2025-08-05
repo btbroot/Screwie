@@ -1,0 +1,18 @@
+[screwie]
+# Bot token
+; bot_token = YOUR_BOT_TOKEN_HERE
+
+# Allowed users, separated by space. Default:
+; allowed_users =
+
+# Logging level. Default:
+; log_level = WARNING
+
+# Timezone for the bot. Default:
+; timezone = UTC
+
+# Delete temporary files after processing. Default:
+; delete_temp_files = True
+
+# Printer script command. Default:
+; printer_script =

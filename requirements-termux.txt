@@ -1,4 +1,10 @@
-# Termux: pkg install ttf-dejavu python-pillow
+# Termux:
+# pkg install ttf-dejavu python-pillow python-numpy
+
 python-telegram-bot ~= 13.15
 urllib3 ~= 1.26.12  # PTB requirement
 tzdata
+
+# Based on MXW01-catprinter/requirements.txt
+bleak ~= 0.22.3
+opencv-python ~= 4.11.0.86

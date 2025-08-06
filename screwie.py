@@ -161,7 +161,11 @@ def handle_message(
                 logging.info(f'Image saved to temporary file: {tmp.name}')
 
                 cmd = (
-                    config[CONFIG_SECTION]['printer_script'].split() +
+                    config[CONFIG_SECTION].get(
+                        option='printer_script',
+                        fallback='MXW01-catprinter/print.py '
+                                 '--dithering-algo none'
+                    ).split() +
                     [tmp.name]
                 )
                 logging.info(f'Calling external program: {cmd}')

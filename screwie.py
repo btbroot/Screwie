@@ -101,7 +101,7 @@ def handle_message(
 
             local_tz = zoneinfo.ZoneInfo(config[CONFIG_SECTION].get(
                 option='timezone',
-                fallback='UTC'
+                fallback='Etc/UTC'
             ))
             text = (
                 update.message.date.astimezone(

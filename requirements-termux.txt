@@ -1,4 +1,4 @@
 # Termux: pkg install ttf-dejavu python-pillow
-python-telegram-bot ~= 13.15 "android"
+python-telegram-bot ~= 13.15
 urllib3 ~= 1.26.12  # PTB requirement
 tzdata

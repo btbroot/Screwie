@@ -1,0 +1,3 @@
+[submodule "MXW01-catprinter"]
+	path = MXW01-catprinter
+	url = https://github.com/Zvitorep/MXW01-catprinter.git

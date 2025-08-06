@@ -160,12 +160,12 @@ def handle_message(
                 img.save(fp=tmp.name, format='PNG')
                 logging.info(f'Image saved to temporary file: {tmp.name}')
 
+                cmd = (
+                    config[CONFIG_SECTION]['printer_script'].split() +
+                    [tmp.name]
+                )
+                logging.info(f'Calling external program: {cmd}')
                 try:
-                    cmd = (
-                        config[CONFIG_SECTION]['printer_script'].split() +
-                        [tmp.name]
-                    )
-                    logging.info(f'Calling external program: {cmd}')
                     subprocess.Popen(cmd)
                 except Exception as e:
                     logging.error(f'Failed to call external program: {e}')

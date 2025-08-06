@@ -7,5 +7,5 @@ tzdata
 
 # Based on MXW01-catprinter/requirements.txt
 bleak ~= 0.22.3
-opencv-python ~= 4.12.0.88  # Differs from the original for numpy compatibility
+opencv-python ~= 4.11.0.86
 numpy == 2.2.5  # Pinned for Termux compatibility
